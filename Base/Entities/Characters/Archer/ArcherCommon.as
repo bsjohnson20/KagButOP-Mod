@@ -22,7 +22,7 @@ namespace ArcherParams
 	const ::s32 legolas_period = ArcherParams::shoot_period * 3;
 
 	const ::s32 fired_time = 4;
-	const ::f32 shoot_max_vel = 40.59f;
+	const ::f32 shoot_max_vel = 20.59f;
 
 	const ::s32 legolas_charge_time = 1;
 	const ::s32 legolas_arrows_count = 1;
@@ -32,13 +32,13 @@ namespace ArcherParams
 }
 
 //TODO: move vars into archer params namespace
-const f32 archer_grapple_length = 150.0f;
-const f32 archer_grapple_slack = 20.0f;
-const f32 archer_grapple_throw_speed = 40.0f;
+const f32 archer_grapple_length = 140.0f;
+const f32 archer_grapple_slack = 4.0f;
+const f32 archer_grapple_throw_speed = 20.0f;
 
 const f32 archer_grapple_force = 8.0f;
-const f32 archer_grapple_accel_limit = .5f;
-const f32 archer_grapple_stiffness = 0.5f;
+const f32 archer_grapple_accel_limit = 4.5f;
+const f32 archer_grapple_stiffness = 0.1f;
 
 namespace ArrowType
 {
