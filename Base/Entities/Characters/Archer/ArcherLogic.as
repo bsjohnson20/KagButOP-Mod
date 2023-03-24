@@ -362,7 +362,7 @@ void ManageBow(CBlob@ this, ArcherInfo@ archer, RunnerMoveVars@ moveVars)
 	//charged - no else (we want to check the very same tick)
 	if (charge_state == ArcherParams::legolas_ready) // fast arrows
 	{
-		moveVars.walkFactor *= 0.75f;
+		moveVars.walkFactor *= 3.00f;
 
 		archer.legolas_time--;
 		if (!hasarrow || archer.legolas_time == 0)

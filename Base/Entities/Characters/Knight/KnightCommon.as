@@ -26,16 +26,16 @@ namespace KnightVars
 	const ::s32 resheath_cut_time = 2;
 	const ::s32 resheath_slash_time = 2;
 
-	const ::s32 slash_charge = 15;
-	const ::s32 slash_charge_level2 = 38;
-	const ::s32 slash_charge_limit = slash_charge_level2 + slash_charge + 10;
-	const ::s32 slash_move_time = 4;
-	const ::s32 slash_time = 13;
-	const ::s32 double_slash_time = 8;
+	const ::s32 slash_charge = 1;
+	const ::s32 slash_charge_level2 = 8;
+	const ::s32 slash_charge_limit = slash_charge_level2 + slash_charge + 20;
+	const ::s32 slash_move_time = 1;
+	const ::s32 slash_time = 2;
+	const ::s32 double_slash_time = 2;
 
-	const ::f32 slash_move_max_speed = 3.5f;
+	const ::f32 slash_move_max_speed = 12.5f;
 
-	const u32 glide_down_time = 50;
+	const u32 glide_down_time = 5000;
 
 	//// OLD MOD COMPATIBILITY ////
 	// These have no purpose in the current code base other then
@@ -96,7 +96,7 @@ const string[] bombTypeNames = { "mat_bombs",
 
 bool hasBombs(CBlob@ this, u8 bombType)
 {
-	return bombType < BombType::count && this.getBlobCount(bombTypeNames[bombType]) > 0;
+	return (bombType < BombType::count && this.getBlobCount(bombTypeNames[bombType])+1 > 0);
 }
 
 //checking state stuff
@@ -183,8 +183,8 @@ const int DELTA_BEGIN_ATTACK = 2;
 const int DELTA_END_ATTACK = 5;
 const f32 DEFAULT_ATTACK_DISTANCE = 16.0f;
 const f32 MAX_ATTACK_DISTANCE = 18.0f;
-const f32 SHIELD_KNOCK_VELOCITY = 3.0f;
+const f32 SHIELD_KNOCK_VELOCITY = 15.0f;
 
-const f32 SHIELD_BLOCK_ANGLE = 175.0f;
-const f32 SHIELD_BLOCK_ANGLE_GLIDING = 140.0f;
-const f32 SHIELD_BLOCK_ANGLE_SLIDING = 160.0f;
+const f32 SHIELD_BLOCK_ANGLE = 230.0f;
+const f32 SHIELD_BLOCK_ANGLE_GLIDING = 170.0f;
+const f32 SHIELD_BLOCK_ANGLE_SLIDING = 180.0f;

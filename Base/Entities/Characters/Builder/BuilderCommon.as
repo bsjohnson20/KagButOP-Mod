@@ -145,7 +145,7 @@ CBlob@ server_BuildBlob(CBlob@ this, BuildBlock[]@ blocks, uint index)
 
 		this.getSprite().PlaySound("/Construct");
 		// take inv here instead of in onDetach
-		server_TakeRequirements(inv, b.reqs);
+		// server_TakeRequirements(inv, b.reqs); // naw don't take stuff
 		DestroyScenary(tl, br);
 		SendGameplayEvent(createBuiltBlobEvent(this.getPlayer(), b.name));
 	}

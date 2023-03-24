@@ -82,10 +82,10 @@ void onTick(CBlob@ this)
 		RunnerMoveVars@ moveVars;
 		if (this.get("moveVars", @moveVars))
 		{
-			moveVars.walkFactor = 0.5f;
-			moveVars.jumpFactor = 0.5f;
+			moveVars.walkFactor = 2.00f;
+			moveVars.jumpFactor = 4.00f;
 		}
-		this.Tag("prevent crouch");
+		// this.Tag("prevent crouch"); // naw
 	}
 
 	if (ismyplayer && this.isKeyPressed(key_action1) && !this.isKeyPressed(key_inventory)) //Don't let the builder place blocks if he/she is selecting which one to place
@@ -168,9 +168,9 @@ bool RecdHitCommand(CBlob@ this, CBitStream@ params)
 				{
 					if (getNet().isServer())
 					{
-						map.server_DestroyTile(tilepos, 1.0f, this);
+						map.server_DestroyTile(tilepos, 14.0f, this);
 
-						Material::fromTile(this, type, 1.0f);
+						Material::fromTile(this, type, 100.0f);
 					}
 
 					if (getNet().isClient())
@@ -196,6 +196,10 @@ bool RecdHitCommand(CBlob@ this, CBitStream@ params)
 			if (isdead) //double damage to corpses
 			{
 				attack_power *= 2.0f;
+			}
+			else{
+				attack_power *= 4.0f;
+				// print("haha power go brr");
 			}
 
 			const bool teamHurt = !blob.hasTag("flesh") || isdead;
@@ -319,7 +323,7 @@ void Pickaxe(CBlob@ this)
 
 	bool hasHit = false;
 
-	const f32 tile_attack_distance = attack_distance * 1.5f;
+	const f32 tile_attack_distance = attack_distance * 5.5f;
 	Vec2f tilepos = blobPos + normal * Maths::Min(aimDir.Length() - 1, tile_attack_distance);
 	Vec2f surfacepos;
 	map.rayCastSolid(blobPos, tilepos, surfacepos);

@@ -593,7 +593,7 @@ class ShieldGlideState : KnightState
 		{
 			Vec2f vel = this.getVelocity();
 
-			moveVars.stoppingFactor *= 0.5f;
+			moveVars.stoppingFactor *= 1.00f;
 			f32 glide_amount = 1.0f - (moveVars.fallCount / f32(KnightVars::glide_down_time * 2));
 
 			if (vel.y > -1.0f)
@@ -667,7 +667,7 @@ class ShieldSlideState : KnightState
 		{
 			if (vel.y > 1.5f && Maths::Abs(vel.x) * 3 > Maths::Abs(vel.y))
 			{
-				vel.y = Maths::Max(-Maths::Abs(vel.y) + 1.0f, -8.0);
+				vel.y = Maths::Max(-Maths::Abs(vel.y) + 4.0f, -8.0);
 				this.setVelocity(vel);
 			}
 			else
@@ -690,6 +690,7 @@ class ShieldSlideState : KnightState
 				{
 					if (knight.slideTime == 5)
 					{
+						moveVars.walkFactor *= 10.75f;
 						this.getSprite().PlayRandomSound("/Scrape");
 					}
 
@@ -698,10 +699,10 @@ class ShieldSlideState : KnightState
 
 					if (knight.slideTime > 30)
 					{
-						moveVars.walkFactor *= 0.75f;
+						moveVars.walkFactor *= 3.75f;
 						if (knight.slideTime > 45)
 						{
-							knight.state = KnightStates::shielding;
+							moveVars.walkFactor *= 5.75f;
 						}
 					}
 					else if (XORRandom(3) == 0)
