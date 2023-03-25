@@ -83,72 +83,72 @@ void InitCosts()
 	cfg.loadFile(ctf_costs_config_file);
 
 	//Building.as
-	CTFCosts::buildershop_wood =            ReadCost(cfg, "cost_buildershop_wood"   , 50);
-	CTFCosts::quarters_wood =               ReadCost(cfg, "cost_quarters_wood"      , 50);
-	CTFCosts::knightshop_wood =             ReadCost(cfg, "cost_knightshop_wood"    , 50);
-	CTFCosts::archershop_wood =             ReadCost(cfg, "cost_archershop_wood"    , 50);
-	CTFCosts::boatshop_wood =               ReadCost(cfg, "cost_boatshop_wood"      , 100);
-	CTFCosts::vehicleshop_wood =            ReadCost(cfg, "cost_vehicleshop_wood"   , 100);
-	CTFCosts::vehicleshop_gold =            ReadCost(cfg, "cost_vehicleshop_gold"   , 50);
-	CTFCosts::storage_stone =               ReadCost(cfg, "cost_storage_stone"      , 50);
-	CTFCosts::storage_wood =                ReadCost(cfg, "cost_storage_wood"       , 50);
-	CTFCosts::tunnel_stone =                ReadCost(cfg, "cost_tunnel_stone"       , 100);
-	CTFCosts::tunnel_wood =                 ReadCost(cfg, "cost_tunnel_wood"        , 50);
-	CTFCosts::tunnel_gold =                 ReadCost(cfg, "cost_tunnel_gold"        , 50);
-	CTFCosts::quarry_stone =				ReadCost(cfg, "cost_quarry_stone"       , 150);
-	CTFCosts::quarry_gold =					ReadCost(cfg, "cost_quarry_gold"        , 100);
-	CTFCosts::quarry_count =				ReadCost(cfg, "cost_quarry_count"       , 1);
+	CTFCosts::buildershop_wood =            ReadCost(cfg, "cost_buildershop_wood"   , 0);
+	CTFCosts::quarters_wood =               ReadCost(cfg, "cost_quarters_wood"      , 0);
+	CTFCosts::knightshop_wood =             ReadCost(cfg, "cost_knightshop_wood"    , 0);
+	CTFCosts::archershop_wood =             ReadCost(cfg, "cost_archershop_wood"    , 0);
+	CTFCosts::boatshop_wood =               ReadCost(cfg, "cost_boatshop_wood"      , 0);
+	CTFCosts::vehicleshop_wood =            ReadCost(cfg, "cost_vehicleshop_wood"   , 0);
+	CTFCosts::vehicleshop_gold =            ReadCost(cfg, "cost_vehicleshop_gold"   , 0);
+	CTFCosts::storage_stone =               ReadCost(cfg, "cost_storage_stone"      , 0);
+	CTFCosts::storage_wood =                ReadCost(cfg, "cost_storage_wood"       , 0);
+	CTFCosts::tunnel_stone =                ReadCost(cfg, "cost_tunnel_stone"       , 0);
+	CTFCosts::tunnel_wood =                 ReadCost(cfg, "cost_tunnel_wood"        , 0);
+	CTFCosts::tunnel_gold =                 ReadCost(cfg, "cost_tunnel_gold"        , 00*0);
+	CTFCosts::quarry_stone =				ReadCost(cfg, "cost_quarry_stone"       , 000*0);
+	CTFCosts::quarry_gold =					ReadCost(cfg, "cost_quarry_gold"        , 000*0);
+	CTFCosts::quarry_count =				ReadCost(cfg, "cost_quarry_count"       , 0*0);
 
 	//ArcherShop.as
-	CTFCosts::arrows =                      ReadCost(cfg, "cost_arrows"             , 15);
-	CTFCosts::waterarrows =                 ReadCost(cfg, "cost_waterarrows"        , 15);
-	CTFCosts::firearrows =                  ReadCost(cfg, "cost_firearrows"         , 30);
-	CTFCosts::bombarrows =                  ReadCost(cfg, "cost_bombarrows"         , 50);
+	CTFCosts::arrows =                      ReadCost(cfg, "cost_arrows"             , 00);
+	CTFCosts::waterarrows =                 ReadCost(cfg, "cost_waterarrows"        , 00);
+	CTFCosts::firearrows =                  ReadCost(cfg, "cost_firearrows"         , 00);
+	CTFCosts::bombarrows =                  ReadCost(cfg, "cost_bombarrows"         , 00);
 
 	//KnightShop.as
-	CTFCosts::bomb =                        ReadCost(cfg, "cost_bomb"               , 25);
-	CTFCosts::waterbomb =                   ReadCost(cfg, "cost_waterbomb"          , 30);
-	CTFCosts::mine =                        ReadCost(cfg, "cost_mine"               , 60);
-	CTFCosts::keg =                         ReadCost(cfg, "cost_keg"                , 120);
+	CTFCosts::bomb =                        ReadCost(cfg, "cost_bomb"               , 00);
+	CTFCosts::waterbomb =                   ReadCost(cfg, "cost_waterbomb"          , 00);
+	CTFCosts::mine =                        ReadCost(cfg, "cost_mine"               , 00);
+	CTFCosts::keg =                         ReadCost(cfg, "cost_keg"                , 000);
 
 	//BuilderShop.as
-	CTFCosts::lantern_wood =                ReadCost(cfg, "cost_lantern_wood"       , 10);
-	CTFCosts::bucket_wood =                 ReadCost(cfg, "cost_bucket_wood"        , 10);
-	CTFCosts::filled_bucket =               ReadCost(cfg, "cost_filled_bucket"      , 10);
-	CTFCosts::sponge =                      ReadCost(cfg, "cost_sponge"             , 15);
-	CTFCosts::boulder_stone =               ReadCost(cfg, "cost_boulder_stone"      , 35);
-	CTFCosts::trampoline_wood =             ReadCost(cfg, "cost_trampoline_wood"    , 150);
-	CTFCosts::saw_wood =                    ReadCost(cfg, "cost_saw_wood"           , 150);
-	CTFCosts::saw_stone =                   ReadCost(cfg, "cost_saw_stone"          , 100);
-	CTFCosts::drill_stone =                 ReadCost(cfg, "cost_drill_stone"        , 100);
-	CTFCosts::drill =                       ReadCost(cfg, "cost_drill"              , 25);
-	CTFCosts::crate_wood =                  ReadCost(cfg, "cost_crate_wood"         , 150);
-	CTFCosts::crate =                       ReadCost(cfg, "cost_crate"              , 20);
+	CTFCosts::lantern_wood =                ReadCost(cfg, "cost_lantern_wood"       , 00);
+	CTFCosts::bucket_wood =                 ReadCost(cfg, "cost_bucket_wood"        , 00);
+	CTFCosts::filled_bucket =               ReadCost(cfg, "cost_filled_bucket"      , 00);
+	CTFCosts::sponge =                      ReadCost(cfg, "cost_sponge"             , 00);
+	CTFCosts::boulder_stone =               ReadCost(cfg, "cost_boulder_stone"      , 00);
+	CTFCosts::trampoline_wood =             ReadCost(cfg, "cost_trampoline_wood"    , 000);
+	CTFCosts::saw_wood =                    ReadCost(cfg, "cost_saw_wood"           , 000);
+	CTFCosts::saw_stone =                   ReadCost(cfg, "cost_saw_stone"          , 000);
+	CTFCosts::drill_stone =                 ReadCost(cfg, "cost_drill_stone"        , 000);
+	CTFCosts::drill =                       ReadCost(cfg, "cost_drill"              , 00);
+	CTFCosts::crate_wood =                  ReadCost(cfg, "cost_crate_wood"         , 00);
+	CTFCosts::crate =                       ReadCost(cfg, "cost_crate"              , 0);
 
 	//BoatShop.as
-	CTFCosts::dinghy =                      ReadCost(cfg, "cost_dinghy"             , 25);
-	CTFCosts::dinghy_wood =                 ReadCost(cfg, "cost_dinghy_wood"        , 100);
-	CTFCosts::longboat =                    ReadCost(cfg, "cost_longboat"           , 50);
-	CTFCosts::longboat_wood =               ReadCost(cfg, "cost_longboat_wood"      , 200);
-	CTFCosts::warboat =                     ReadCost(cfg, "cost_warboat"            , 250);
-	CTFCosts::warboat_gold =                ReadCost(cfg, "cost_warboat_gold"       , 50);
+	CTFCosts::dinghy =                      ReadCost(cfg, "cost_dinghy"             , 0);
+	CTFCosts::dinghy_wood =                 ReadCost(cfg, "cost_dinghy_wood"        , 00);
+	CTFCosts::longboat =                    ReadCost(cfg, "cost_longboat"           , 0);
+	CTFCosts::longboat_wood =               ReadCost(cfg, "cost_longboat_wood"      , 00);
+	CTFCosts::warboat =                     ReadCost(cfg, "cost_warboat"            , 00);
+	CTFCosts::warboat_gold =                ReadCost(cfg, "cost_warboat_gold"       , 0);
 
 	//VehicleShop.as
-	CTFCosts::catapult =                    ReadCost(cfg, "cost_catapult"                   , 120);
-	CTFCosts::ballista =                    ReadCost(cfg, "cost_ballista"                   , 200);
-	CTFCosts::ballista_ammo =               ReadCost(cfg, "cost_ballista_ammo"              , 80);
-	CTFCosts::ballista_bomb_ammo =          ReadCost(cfg, "cost_ballista_bomb_ammo"         , 100);
-	CTFCosts::outpost_coins =				ReadCost(cfg, "cost_outpost_coins"				, 150);
-	CTFCosts::outpost_gold =				ReadCost(cfg, "cost_outpost_gold"				, 50);
+	CTFCosts::catapult =                    ReadCost(cfg, "cost_catapult"                   , 00);
+	CTFCosts::ballista =                    ReadCost(cfg, "cost_ballista"                   , 00);
+	CTFCosts::ballista_ammo =               ReadCost(cfg, "cost_ballista_ammo"              , 0);
+	CTFCosts::ballista_bomb_ammo =          ReadCost(cfg, "cost_ballista_bomb_ammo"         , 00);
+	CTFCosts::outpost_coins =				ReadCost(cfg, "cost_outpost_coins"				, 00);
+	CTFCosts::outpost_gold =				ReadCost(cfg, "cost_outpost_gold"				, 0);
 
 	//Quarters.as
-	CTFCosts::beer =                        ReadCost(cfg, "cost_beer"               , 5);
-	CTFCosts::meal =                        ReadCost(cfg, "cost_meal"               , 10);
-	CTFCosts::egg =                         ReadCost(cfg, "cost_egg"                , 30);
-	CTFCosts::burger =                      ReadCost(cfg, "cost_burger"             , 20);
+	CTFCosts::beer =                        ReadCost(cfg, "cost_beer"               , 0);
+	CTFCosts::meal =                        ReadCost(cfg, "cost_meal"               , 0);
+	CTFCosts::egg =                         ReadCost(cfg, "cost_egg"                , 0);
+	CTFCosts::burger =                      ReadCost(cfg, "cost_burger"             , 0);
 
 	//CommonBuilderBlocks.as
-	CTFCosts::workshop_wood =               ReadCost(cfg, "cost_workshop_wood"      , 150);
+	CTFCosts::workshop_wood =               ReadCost(cfg, "cost_workshop_wood"      , 00);
 
 	// war costs ///////////////////////////////////////////////////////////////
 
@@ -159,44 +159,44 @@ void InitCosts()
 	cfg.loadFile(war_costs_config_file);
 
 	//Workbench.as
-	WARCosts::lantern_wood =            ReadCost(cfg, "cost_lantern_wood"       , 10);
-	WARCosts::bucket_wood =             ReadCost(cfg, "cost_bucket_wood"        , 10);
-	WARCosts::sponge_wood =             ReadCost(cfg, "cost_sponge_wood"        , 50);
-	WARCosts::trampoline_wood =         ReadCost(cfg, "cost_trampoline_wood"    , 150);
-	WARCosts::crate_wood =              ReadCost(cfg, "cost_crate_wood"         , 30);
-	WARCosts::drill_stone =             ReadCost(cfg, "cost_drill_stone"        , 100);
-	WARCosts::saw_wood =                ReadCost(cfg, "cost_saw_wood"           , 150);
-	WARCosts::dinghy_wood =             ReadCost(cfg, "cost_dinghy_wood"        , 100);
-	WARCosts::boulder_stone =           ReadCost(cfg, "cost_boulder_stone"      , 30);
+	WARCosts::lantern_wood =            ReadCost(cfg, "cost_lantern_wood"       , 0);
+	WARCosts::bucket_wood =             ReadCost(cfg, "cost_bucket_wood"        , 0);
+	WARCosts::sponge_wood =             ReadCost(cfg, "cost_sponge_wood"        , 0);
+	WARCosts::trampoline_wood =         ReadCost(cfg, "cost_trampoline_wood"    , 00);
+	WARCosts::crate_wood =              ReadCost(cfg, "cost_crate_wood"         , 0);
+	WARCosts::drill_stone =             ReadCost(cfg, "cost_drill_stone"        , 00);
+	WARCosts::saw_wood =                ReadCost(cfg, "cost_saw_wood"           , 00);
+	WARCosts::dinghy_wood =             ReadCost(cfg, "cost_dinghy_wood"        , 00);
+	WARCosts::boulder_stone =           ReadCost(cfg, "cost_boulder_stone"      , 0);
 
 	//Scrolls
-	WARCosts::crappiest_scroll =        ReadCost(cfg, "cost_crappiest_scroll"   , 60);
-	WARCosts::crappy_scroll =           ReadCost(cfg, "cost_crappy_scroll"      , 100);
-	WARCosts::medium_scroll =           ReadCost(cfg, "cost_medium_scroll"      , 200);
-	WARCosts::big_scroll =              ReadCost(cfg, "cost_big_scroll"         , 300);
-	WARCosts::super_scroll =            ReadCost(cfg, "cost_super_scroll"       , 500);
+	WARCosts::crappiest_scroll =        ReadCost(cfg, "cost_crappiest_scroll"   , 0);
+	WARCosts::crappy_scroll =           ReadCost(cfg, "cost_crappy_scroll"      , 00);
+	WARCosts::medium_scroll =           ReadCost(cfg, "cost_medium_scroll"      , 00);
+	WARCosts::big_scroll =              ReadCost(cfg, "cost_big_scroll"         , 00);
+	WARCosts::super_scroll =            ReadCost(cfg, "cost_super_scroll"       , 00);
 
 	//CommonBuilderBlocks.as
-	WARCosts::factory_wood =            ReadCost(cfg, "cost_factory_wood"       , 150);
-	WARCosts::workbench_wood =          ReadCost(cfg, "cost_workbench_wood"     , 120);
+	WARCosts::factory_wood =            ReadCost(cfg, "cost_factory_wood"       , 00);
+	WARCosts::workbench_wood =          ReadCost(cfg, "cost_workbench_wood"     , 00);
 
 	//WAR_Base.as
-	WARCosts::tunnel_stone =            ReadCost(cfg, "cost_tunnel_stone"       , 100);
-	WARCosts::kitchen_wood =            ReadCost(cfg, "cost_kitchen_wood"       , 100);
+	WARCosts::tunnel_stone =            ReadCost(cfg, "cost_tunnel_stone"       , 00);
+	WARCosts::kitchen_wood =            ReadCost(cfg, "cost_kitchen_wood"       , 00);
 
 	// builder costs ////////////////////////////////////////////////////////////
 
 	cfg.loadFile(builder_costs_config_file);
 
-	BuilderCosts::stone_block =         ReadCost(cfg, "cost_stone_block"        , 10);
+	BuilderCosts::stone_block =         ReadCost(cfg, "cost_stone_block"        , 0);
 	BuilderCosts::back_stone_block =    ReadCost(cfg, "cost_back_stone_block"   , 2);
-	BuilderCosts::stone_door =          ReadCost(cfg, "cost_stone_door"         , 50);
-	BuilderCosts::wood_block =          ReadCost(cfg, "cost_wood_block"         , 10);
+	BuilderCosts::stone_door =          ReadCost(cfg, "cost_stone_door"         , 0);
+	BuilderCosts::wood_block =          ReadCost(cfg, "cost_wood_block"         , 0);
 	BuilderCosts::back_wood_block =     ReadCost(cfg, "cost_back_wood_block"    , 2);
-	BuilderCosts::wooden_door =         ReadCost(cfg, "cost_wooden_door"        , 30);
-	BuilderCosts::trap_block =          ReadCost(cfg, "cost_trap_block"         , 25);
-	BuilderCosts::bridge =              ReadCost(cfg, "cost_bridge"             , 30);
-	BuilderCosts::ladder =              ReadCost(cfg, "cost_ladder"             , 10);
-	BuilderCosts::wooden_platform =     ReadCost(cfg, "cost_wooden_platform"    , 15);
-	BuilderCosts::spikes =              ReadCost(cfg, "cost_spikes"             , 30);
+	BuilderCosts::wooden_door =         ReadCost(cfg, "cost_wooden_door"        , 0);
+	BuilderCosts::trap_block =          ReadCost(cfg, "cost_trap_block"         , 0);
+	BuilderCosts::bridge =              ReadCost(cfg, "cost_bridge"             , 0);
+	BuilderCosts::ladder =              ReadCost(cfg, "cost_ladder"             , 0);
+	BuilderCosts::wooden_platform =     ReadCost(cfg, "cost_wooden_platform"    , 0);
+	BuilderCosts::spikes =              ReadCost(cfg, "cost_spikes"             , 0);
 }
