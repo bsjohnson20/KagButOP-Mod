@@ -686,8 +686,10 @@ class ShieldSlideState : KnightState
 			if (!inair)
 			{
 				knight.slideTime++;
+				moveVars.walkFactor = 2.75f;
 				if (knight.slideTime > 0)
 				{
+					
 					if (knight.slideTime == 5)
 					{
 						moveVars.walkFactor *= 10.75f;
