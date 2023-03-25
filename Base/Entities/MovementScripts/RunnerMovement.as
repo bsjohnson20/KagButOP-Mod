@@ -2,7 +2,7 @@
 
 #include "RunnerCommon.as"
 #include "MakeDustParticle.as";
-#include "FallDamageCommon.as";
+// disable fall damage #include "FallDamageCommon.as";
 #include "KnockedCommon.as";
 
 void onInit(CMovement@ this)
@@ -46,22 +46,7 @@ void onTick(CMovement@ this)
 
 	if (is_client && getGameTime() % 3 == 0)
 	{
-		const string fallscreamtag = "_fallingscream";
-		if (vel.y > 0.2f)
-		{
-			if (vel.y > BaseFallSpeed() * 1.8f && !blob.isInInventory())
-			{
-				if (!blob.hasTag(fallscreamtag))
-				{
-					blob.Tag(fallscreamtag);
-					Sound::Play("man_scream.ogg", pos);
-				}
-			}
-		}
-		else
-		{
-			blob.Untag(fallscreamtag);
-		}
+		
 
 		/* unfortunately, this doesn't work with archer bow draw stuff;
 			might need to bind separate sounds cause this solution is much better.
