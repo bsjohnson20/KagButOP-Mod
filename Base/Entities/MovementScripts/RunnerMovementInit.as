@@ -6,16 +6,16 @@ void onInit(CMovement@ this)
 {
 	RunnerMoveVars moveVars;
 	//walking vars
-	moveVars.walkSpeed = 2.6f;
+	moveVars.walkSpeed = 4.6f;
 	moveVars.walkSpeedInAir = 2.5f;
 	moveVars.walkFactor = 1.0f;
 	moveVars.walkLadderSpeed.Set(0.15f, 0.6f);
 	//jumping vars
-	moveVars.jumpMaxVel = 2.9f;
+	moveVars.jumpMaxVel = 8.9f;
 	moveVars.jumpStart = 1.0f;
 	moveVars.jumpMid = 0.55f;
 	moveVars.jumpEnd = 0.4f;
-	moveVars.jumpFactor = 1.0f;
+	moveVars.jumpFactor = 2.0f;
 	moveVars.jumpCount = 0;
 	moveVars.canVault = true;
 	//swimming
